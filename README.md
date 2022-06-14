@@ -22,12 +22,3 @@ kubectl apply -f https://raw.githubusercontent.com/zectorpt/configmapdns/main/cu
 In the POD try to ping again the name
 
 ping example1.org
-
-
-## How to edit a custom DNS with a configmap and test it
-
-Change the DNS entry
-
-kubectl edit configmap coredns-custom -n kube-system
-
-kubectl delete pod --namespace kube-system -l k8s-app=kube-dns
