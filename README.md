@@ -1,9 +1,11 @@
 # Pre requirement - A cluster
-How to deploy a custom DNS with a configmap and test it
+## How to deploy a custom DNS with a configmap and test it
 
 1 - Deploy a new pod to test the name
 
 kubectl apply -f https://raw.githubusercontent.com/zectorpt/pods/master/ubuntuts.yaml
+
+kubectl delete pod --namespace kube-system -l k8s-app=kube-dns
 
 2 - Enter the POD and test the name:
 
