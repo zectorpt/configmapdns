@@ -17,5 +17,6 @@ In another window deploy the configmap:
 
 kubectl apply -f https://raw.githubusercontent.com/zectorpt/configmapdns/main/customdns.yaml
 
-kubectl delete configmap --namespace kube-system coredns-custom
+In the POD try to ping again the name
 
+ping example1.org
